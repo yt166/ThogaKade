@@ -173,6 +173,27 @@ public class ItemFormController {
     }
 
     public void btnUpdateOnAction(javafx.event.ActionEvent actionEvent) {
+        Itemdto itemdto = new Itemdto(txtCode.getText(), txtDes.getText(), Double.parseDouble(txtPrize.getText()), Integer.parseInt(txtQty.getText()));
+        String sql ="UPDATE Customer SET name =?, address=? , salary=? WHERE id ='"+itemdto.getCode()+"'";
+
+        try {
+            PreparedStatement preparedStatement = DBConnection.getInstance().getConnection().prepareStatement(sql);
+            preparedStatement.setString(1,itemdto.getCode());
+            preparedStatement.setString(2,itemdto.getDescription());
+            preparedStatement.setDouble(3,itemdto.getUnitprize());
+            preparedStatement.setInt(4,itemdto.getQty());
+
+            int result = preparedStatement.executeUpdate();
+            if(result>0){
+                new Alert(Alert.AlertType.INFORMATION,"Item Updated Successfully");
+            }else {
+                new Alert(Alert.AlertType.WARNING,"Something went wrong");
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
 
     }
 }

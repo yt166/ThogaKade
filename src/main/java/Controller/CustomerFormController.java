@@ -6,9 +6,14 @@ import dto.tm.Customertm;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.layout.BorderPane;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -30,6 +35,7 @@ public class CustomerFormController {
     public Button btnBack;
     public TableView tblCustomer;
     public TableColumn coloption;
+    public BorderPane cusPane;
 
     public void initialize(){
             colid.setCellValueFactory(new PropertyValueFactory<>("id"));
@@ -149,9 +155,18 @@ public class CustomerFormController {
     }
 
     public void btnReloadOnAction(ActionEvent actionEvent) {
-
+        loadCustomer();
+        tblCustomer.refresh();
     }
 
     public void btnBackOnAction(ActionEvent actionEvent) {
+        Stage stage = (Stage) cusPane.getScene().getWindow();
+        try {
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/ThogaKadeForm.fxml"))));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        stage.setResizable(false);
+        stage.show();
     }
 }
