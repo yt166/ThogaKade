@@ -19,3 +19,7 @@ N
 src/main/java/dto/Itemdto.java,2\4\24ab9d072cc1da254af9becdc9c839b1a207efb2
 R
 "src/main/java/dto/Customerdto.java,8\3\83de20479315aabbe9acb300e05bc003db9d0ed0
+U
+%src/main/resources/view/ItemForm.fxml,7\0\70dcb4f25d4b87cfd0e50873d60c45ad39e9db9e
+Y
+)src/main/resources/view/CustomerForm.fxml,a\c\acd91821c14a7fa136e03465100ed42a1e379376

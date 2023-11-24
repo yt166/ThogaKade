@@ -1,22 +1,5 @@
 
-g	java:S112o"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¹ç´ç¿1
-Q
-java:S37406"/Provide the parametrized type for this generic.(íı’­úÿÿÿÿ8¾…²ç¿1
-Q
-java:S37409"/Provide the parametrized type for this generic.(ÓËøùÿÿÿÿ8¾…²ç¿1
-Q
-java:S3740<"/Provide the parametrized type for this generic.(óÿÑÏûÿÿÿÿ8¾…²ç¿1
-Q
-java:S3740?"/Provide the parametrized type for this generic.(ıø–»şÿÿÿÿ8¾…²ç¿1
-Q
-java:S3740B"/Provide the parametrized type for this generic.(Èâ–úÿÿÿÿ8¾…²ç¿1
 v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(º›°Î8Á…²ç¿1
-i
-java:S2095`"GUse try-with-resources or close this "Statement" in a "finally" clause.(ƒó”ùÿÿÿÿ8şíÑŒÀ1
-q
-java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ı‰Õßıÿÿÿÿ8ÿíÑŒÀ1
-r
-java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ŸÏ“¯úÿÿÿÿ8€îÑŒÀ1
 ¤
 java:S1186¯"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÈÑÖûÿÿÿÿ8Ü…²ç¿1
 P
@@ -24,7 +7,3 @@ java:S1172"2Remove this unused method parameter "actionEvent".(ï‹„ã8ä…²ç¿1
 U
 java:S1172™"2Remove this unused method parameter "actionEvent".(íñâ´ùÿÿÿÿ8é…²ç¿1
 F	java:S108¨")Either remove or fill this block of code.(É®£8ë…²ç¿1
-h
-java:S1128"KRemove this unused import 'javafx.scene.control.cell.PropertyValueFactory'.(àÎ¬õ8ÒîÑŒÀ1
-B
-java:S1128"%Remove this unused import 'java.awt'.(ï´µ©8ÓîÑŒÀ1
